@@ -1,155 +1,130 @@
-.title-text h1 {
+body {
+    background-color: darksalmon;
+  }
+  
+  .title-text h1 {
     font-family: 'Libre Baskerville', serif;
     font-family: 'Pacifico', cursive;
     font-size: 72pt;
     text-align: center;
     margin: 0; 
-}
-
-.alt-text {
+  }
+  
+  .alt-text {
     font-family: 'Agdasima', sans-serif;
     font-weight: bold;
     text-align: center;
     font-size: 36pt;
     margin-top: 0; 
-}
-
-.cloud {
+  }
+  
+  .cloud {
     width: 300px;
-}
-
-.cloud.top {
+  }
+  
+  .cloud.top {
     margin-left: 150px;
     margin-bottom: 0;
-}
-
-.cloud.bottom {
+  }
+  
+  .cloud.bottom {
     float: right;
     margin-right: 150px;
-}
-
-.top-container {
+  }
+  
+  .top-container {
     margin-bottom: 200px;
-}
-
-.my-image {
+  }
+  
+  .my-image {
     border-radius: 50%;
     display: block;
     margin: 0 auto;
     width: 250px;
     height: 250px;
-}
-
-.image-header {
+  }
+  
+  .image-header,
+  .skills-header,
+  .getintouch-header {
     font-family: 'Agdasima', sans-serif;
     font-weight: bold;
     text-align: center;
+    margin-bottom: 5px;
+  }
+  
+  .image-header,
+  .image-text,
+  .alt-text,
+  .image-header,
+  .getintouch-alt,
+  .coding-header,
+  .coding-text,
+  .gamemastering-header,
+  .gamemastering-text,
+  .contact-me {
+    font-family: 'Agdasima', sans-serif;
+  }
+  
+  .image-header,
+  .getintouch-header {
     font-size: 36pt;
     margin-top: 15px;
-    margin-bottom: 5px;
-}
-
-.image-text {
-    font-family: 'Agdasima', sans-serif;
-    text-align: center;
+  }
+  
+  .image-text {
     font-size: 24pt;
     width: 30%;
     margin: auto;
-}
-
-hr {
+  }
+  
+  hr {
     border: dotted;
     border-bottom: none;
     width: 20%;
     margin: 100px auto;
-}
-
-.skills-header {
-    font-family: 'Agdasima', sans-serif;
-    font-weight: bold;
-    text-align: center;
-    font-size: 36pt;
-    margin-bottom: 5px;
-}
-
-.coding {
+  }
+  
+  .coding,
+  .gamemastering {
     width: 30%;
     margin: auto;
-}
-
-.coding-rat {
+  }
+  
+  .coding-rat,
+  .gamemastering-cat {
     width: 200px;
     display: block;
     margin: 15px;
     margin-top: 0;
     float: left;
-}
-
-.coding-header {
-    font-family: 'Agdasima', sans-serif;
-    font-weight: bold;
+  }
+  
+  .coding-header,
+  .gamemastering-header {
     font-size: 24pt;
     margin-bottom: 0;
-}
-
-.coding-text {
-    font-family: 'Agdasima', sans-serif;
+  }
+  
+  .coding-text,
+  .gamemastering-text {
     margin-top: 0;
     font-size: 14pt;
-}
-
-.gamemastering {
-    width: 30%;
-    margin: auto;
-    margin-top: 50px;
-}
-
-.gamemastering-cat {
-    width: 200px;
-    display: block;
-    margin: 15px;
-    margin-top: 0;
-    float: left;
-}
-
-.gamemastering-header {
-    font-family: 'Agdasima', sans-serif;
-    font-weight: bold;
-    font-size: 24pt;
-    margin-bottom: 0;
-}
-
-.gamemastering-text {
-    font-family: 'Agdasima', sans-serif;
-    margin-top: 0;
-    font-size: 14pt;
-}
-
-.getintouch {
+  }
+  
+  .getintouch {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-}
-
-.getintouch-header {
-    font-family: 'Agdasima', sans-serif;
-    font-weight: bold;
-    text-align: center;
-    font-size: 36pt;
-    margin-bottom: 0;
-    margin-top: 0;
-}
-
-.getintouch-alt {
-    font-family: 'Agdasima', sans-serif;
-    font-weight: bold;
-    text-align: center;
+  }
+  
+  .getintouch-alt {
     margin-top: 5px;
     font-size: 18pt;
-}
-
-.contact-me {
+  }
+  
+  .contact-me {
     display: inline-block; 
     margin: 0 auto; 
     padding: 10px 20px;
@@ -157,36 +132,33 @@ hr {
     border-radius: 30px;
     background-color: #ff8c00;
     color: white;
-    font-family: 'Agdasima', sans-serif;
     font-size: 18pt;
     cursor: pointer;
     transition: background-color 0.3s ease-in-out;
-}
-
-.contact-me:hover {
+  }
+  
+  .contact-me:hover {
     background-color: #e76b00; 
-}
-
-.bottom-container {
+  }
+  
+  .bottom-container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
     margin-top: 100px;
-}
-
-.social-icon {
+  }
+  
+  .social-icon {
     width: 50px;
     margin: 10px; 
-}
-
-.social-icon:hover {
+  }
+  
+  .social-icon:hover {
     filter: invert(30%);
-}
-
-/* Mobile Styles */
-
-@media only screen and (max-width: 600px) {
+  }
+  
+  @media only screen and (max-width: 600px) {
     .title-text h1 {
       font-size: 36pt;
     }
@@ -212,7 +184,9 @@ hr {
       height: 150px;
     }
   
-    .image-header {
+    .image-header,
+    .skills-header,
+    .getintouch-header {
       font-size: 18pt;
     }
   
@@ -225,38 +199,22 @@ hr {
       width: 75%;
     }
   
-    .skills-header {
-      font-size: 18pt;
-    }
-  
-    .coding {
-      width: 75%;
-    }
-  
-    .coding-rat {
-      width: 100px;
-    }
-  
-    .coding-header {
-      font-size: 12pt;
-    }
-  
-    .coding-text {
-      font-size: 10pt;
-    }
-  
+    .coding,
     .gamemastering {
       width: 75%;
     }
   
+    .coding-rat,
     .gamemastering-cat {
       width: 100px;
     }
   
+    .coding-header,
     .gamemastering-header {
       font-size: 12pt;
     }
   
+    .coding-text,
     .gamemastering-text {
       font-size: 10pt;
     }
@@ -309,7 +267,9 @@ hr {
       height: 100px;
     }
   
-    .image-header {
+    .image-header,
+    .skills-header,
+    .getintouch-header {
       font-size: 16pt;
     }
   
@@ -323,38 +283,22 @@ hr {
       margin: 50px auto;
     }
   
-    .skills-header {
-      font-size: 16pt;
-    }
-  
-    .coding {
-      width: 80%;
-    }
-  
-    .coding-rat {
-      width: 75px;
-    }
-  
-    .coding-header {
-      font-size: 10pt;
-    }
-  
-    .coding-text {
-      font-size: 8pt;
-    }
-  
+    .coding,
     .gamemastering {
       width: 80%;
     }
   
+    .coding-rat,
     .gamemastering-cat {
       width: 75px;
     }
   
+    .coding-header,
     .gamemastering-header {
       font-size: 10pt;
     }
   
+    .coding-text,
     .gamemastering-text {
       font-size: 8pt;
     }
@@ -381,108 +325,88 @@ hr {
       width: 15px;
       margin: 5px;
     }
-  }  
-
-  /* Make it responsive to portrait tablets */
-
-    @media only screen and (orientation: portrait) {
-        .title-text h1 {
-        font-size: 36pt;
-        }
-    
-        .alt-text {
-        font-size: 18pt;
-        }
-    
-        .cloud {
-        width: 150px;
-        }
-    
-        .cloud.top {
-        margin-left: 50px;
-        }
-    
-        .cloud.bottom {
-        margin-right: 50px;
-        }
-    
-        .my-image {
-        width: 150px;
-        height: 150px;
-        }
-    
-        .image-header {
-        font-size: 18pt;
-        }
-    
-        .image-text {
-        font-size: 12pt;
-        width: 75%;
-        }
-    
-        hr {
-        width: 75%;
-        }
-    
-        .skills-header {
-        font-size: 18pt;
-        }
-    
-        .coding {
-        width: 75%;
-        }
-    
-        .coding-rat {
-        width: 100px;
-        }
-    
-        .coding-header {
-        font-size: 12pt;
-        }
-    
-        .coding-text {
-        font-size: 10pt;
-        }
-    
-        .gamemastering {
-        width: 75%;
-        }
-    
-        .gamemastering-cat {
-        width: 100px;
-        }
-    
-        .gamemastering-header {
-        font-size: 12pt;
-        }
-    
-        .gamemastering-text {
-        font-size: 10pt;
-        }
-    
-        .getintouch-header {
-        font-size: 18pt;
-        }
-    
-        .getintouch-alt {
-        font-size: 10pt;
-        }
-    
-        .contact-me {
-        font-size: 10pt;
-        padding: 5px 10px;
-        }
-    
-        .bottom-container {
-        flex-direction: row;
-        }
-    
-        .social-icon {
-        width: 20px;
-        }
+  }
+  
+  @media only screen and (orientation: portrait) {
+    .title-text h1 {
+      font-size: 36pt;
     }
-
-
-body {
-    background-color: darksalmon;
-}
+  
+    .alt-text {
+      font-size: 18pt;
+    }
+  
+    .cloud {
+      width: 150px;
+    }
+  
+    .cloud.top {
+      margin-left: 50px;
+    }
+  
+    .cloud.bottom {
+      margin-right: 50px;
+    }
+  
+    .my-image {
+      width: 150px;
+      height: 150px;
+    }
+  
+    .image-header,
+    .skills-header,
+    .getintouch-header {
+      font-size: 18pt;
+    }
+  
+    .image-text {
+      font-size: 12pt;
+      width: 75%;
+    }
+  
+    hr {
+      width: 75%;
+    }
+  
+    .coding,
+    .gamemastering {
+      width: 75%;
+    }
+  
+    .coding-rat,
+    .gamemastering-cat {
+      width: 100px;
+    }
+  
+    .coding-header,
+    .gamemastering-header {
+      font-size: 12pt;
+    }
+  
+    .coding-text,
+    .gamemastering-text {
+      font-size: 10pt;
+    }
+  
+    .getintouch-header {
+      font-size: 18pt;
+    }
+  
+    .getintouch-alt {
+      font-size: 10pt;
+    }
+  
+    .contact-me {
+      font-size: 10pt;
+      padding: 5px 10px;
+    }
+  
+    .bottom-container {
+      flex-direction: row;
+    }
+  
+    .social-icon {
+      width: 20px;
+    }
+  }
+  
