@@ -1,0 +1,172 @@
+.title-text h1 {
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Pacifico', cursive;
+    font-size: 72pt;
+    text-align: center;
+    margin: 0; 
+}
+
+.alt-text {
+    font-family: 'Agdasima', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 36pt;
+    margin-top: 0; 
+}
+
+.cloud {
+    width: 300px;
+}
+
+.cloud.top {
+    margin-left: 150px;
+    margin-bottom: 0;
+}
+
+.cloud.bottom {
+    float: right;
+    margin-right: 150px;
+}
+
+.top-container {
+    margin-bottom: 200px;
+}
+
+.my-image {
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    width: 250px;
+    height: 250px;
+}
+
+.image-header {
+    font-family: 'Agdasima', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 36pt;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.image-text {
+    font-family: 'Agdasima', sans-serif;
+    text-align: center;
+    font-size: 24pt;
+    width: 30%;
+    margin: auto;
+}
+
+hr {
+    border: dotted;
+    border-bottom: none;
+    width: 20%;
+    margin: 100px auto;
+}
+
+.skills-header {
+    font-family: 'Agdasima', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 36pt;
+    margin-bottom: 5px;
+}
+
+.coding {
+    width: 30%;
+    margin: auto;
+}
+
+.coding-rat {
+    width: 200px;
+    display: block;
+    margin: 15px;
+    margin-top: 0;
+    float: left;
+}
+
+.coding-header {
+    font-family: 'Agdasima', sans-serif;
+    font-weight: bold;
+    font-size: 24pt;
+    margin-bottom: 0;
+}
+
+.coding-text {
+    font-family: 'Agdasima', sans-serif;
+    margin-top: 0;
+    font-size: 14pt;
+}
+
+.gamemastering {
+    width: 30%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.gamemastering-cat {
+    width: 200px;
+    display: block;
+    margin: 15px;
+    margin-top: 0;
+    float: left;
+}
+
+.gamemastering-header {
+    font-family: 'Agdasima', sans-serif;
+    font-weight: bold;
+    font-size: 24pt;
+    margin-bottom: 0;
+}
+
+.gamemastering-text {
+    font-family: 'Agdasima', sans-serif;
+    margin-top: 0;
+    font-size: 14pt;
+}
+
+.getintouch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.getintouch-header {
+    font-family: 'Agdasima', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 36pt;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.getintouch-alt {
+    font-family: 'Agdasima', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 5px;
+    font-size: 18pt;
+}
+
+.contact-me {
+    display: inline-block; 
+    margin: 0 auto; 
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    background-color: #ff8c00;
+    color: white;
+    font-family: 'Agdasima', sans-serif;
+    font-size: 18pt;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.contact-me:hover {
+    background-color: #e76b00; 
+}
+
+body {
+    background-color: darksalmon;
+}
