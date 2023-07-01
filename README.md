@@ -4,7 +4,7 @@ This is the source code for my personal website.
 
 ## Preview
 
-You can see a live preview of the website [here]([Mert Ergün (mert-ergun.github.io)](https://mert-ergun.github.io/Personal-Website/)).
+You can see a live preview of the website [here](https://mert-ergun.github.io/Personal-Website/).
 
 ## Technologies Used
 
