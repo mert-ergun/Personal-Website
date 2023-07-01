@@ -376,6 +376,102 @@ hr {
     }
 }
 
+@media (max-width: 600px) {
+    .title-text h1 {
+        font-size: 48pt;
+    }
+
+    .alt-text {
+        font-size: 24pt;
+    }
+
+    .cloud {
+        width: 200px;
+    }
+
+    .cloud.top {
+        margin-left: 100px;
+    }
+
+    .cloud.bottom {
+        margin-right: 100px;
+    }
+
+    .my-image {
+        width: 200px;
+        height: 200px;
+    }
+
+    .image-header {
+        font-size: 24pt;
+    }
+
+    .image-text {
+        font-size: 18pt;
+        width: 50%;
+    }
+
+    hr {
+        width: 50%;
+    }
+
+    .skills-header {
+        font-size: 24pt;
+    }
+
+    .coding {
+        width: 50%;
+    }
+
+    .coding-rat {
+        width: 150px;
+    }
+
+    .coding-header {
+        font-size: 18pt;
+    }
+
+    .coding-text {
+        font-size: 12pt;
+    }
+
+    .gamemastering {
+        width: 50%;
+    }
+
+    .gamemastering-cat {
+        width: 150px;
+    }
+
+    .gamemastering-header {
+        font-size: 18pt;
+    }
+
+    .gamemastering-text {
+        font-size: 12pt;
+    }
+
+    .getintouch-header {
+        font-size: 24pt;
+    }
+
+    .getintouch-alt {
+        font-size: 12pt;
+    }
+
+    .contact-me {
+        font-size: 12pt;
+    }
+
+    .bottom-container {
+        flex-direction: column;
+    }
+
+    .social-icon {
+        width: 30px;
+    }
+}
+
 body {
     background-color: darksalmon;
 }
