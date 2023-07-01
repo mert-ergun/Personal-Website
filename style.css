@@ -65,8 +65,13 @@ body {
   .contact-me {
     font-family: 'Agdasima', sans-serif;
   }
+
+  .image-text {
+    text-align: center;
+  }
   
   .image-header,
+  .skills-header,
   .getintouch-header {
     font-size: 36pt;
     margin-top: 15px;
