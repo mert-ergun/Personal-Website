@@ -184,293 +184,204 @@ hr {
     filter: invert(30%);
 }
 
+/* Mobile Styles */
+
 @media only screen and (max-width: 600px) {
     .title-text h1 {
-        font-size: 48pt;
+      font-size: 36pt;
     }
-
+  
     .alt-text {
-        font-size: 24pt;
+      font-size: 18pt;
     }
-
+  
     .cloud {
-        width: 200px;
+      width: 150px;
     }
-
+  
     .cloud.top {
-        margin-left: 100px;
+      margin-left: 50px;
     }
-
+  
     .cloud.bottom {
-        margin-right: 100px;
+      margin-right: 50px;
     }
-
+  
     .my-image {
-        width: 200px;
-        height: 200px;
+      width: 150px;
+      height: 150px;
     }
-
+  
     .image-header {
-        font-size: 24pt;
+      font-size: 18pt;
     }
-
+  
     .image-text {
-        font-size: 18pt;
-        width: 50%;
+      font-size: 12pt;
+      width: 75%;
     }
-
+  
     hr {
-        width: 50%;
+      width: 75%;
     }
-
+  
     .skills-header {
-        font-size: 24pt;
+      font-size: 18pt;
     }
-
+  
     .coding {
-        width: 50%;
+      width: 75%;
     }
-
+  
     .coding-rat {
-        width: 150px;
+      width: 100px;
     }
-
+  
     .coding-header {
-        font-size: 18pt;
+      font-size: 12pt;
     }
-
+  
     .coding-text {
-        font-size: 12pt;
+      font-size: 10pt;
     }
-
+  
     .gamemastering {
-        width: 50%;
+      width: 75%;
     }
-
+  
     .gamemastering-cat {
-        width: 150px;
+      width: 100px;
     }
-
+  
     .gamemastering-header {
-        font-size: 18pt;
+      font-size: 12pt;
     }
-
+  
     .gamemastering-text {
-        font-size: 12pt;
+      font-size: 10pt;
     }
-
+  
     .getintouch-header {
-        font-size: 24pt;
+      font-size: 18pt;
     }
-
+  
     .getintouch-alt {
-        font-size: 12pt;
+      font-size: 10pt;
     }
-
+  
     .contact-me {
-        font-size: 12pt;
+      font-size: 10pt;
+      padding: 5px 10px;
     }
-
+  
     .bottom-container {
-        flex-direction: column;
+      flex-direction: column;
     }
-
+  
     .social-icon {
-        width: 30px;
+      width: 20px;
     }
-}
-
-@media only screen and (max-width: 400px) {
+  }
+  
+  @media only screen and (max-width: 400px) {
     .title-text h1 {
-        font-size: 36pt;
+      font-size: 30pt;
     }
-
+  
     .alt-text {
-        font-size: 18pt;
+      font-size: 16pt;
     }
-
+  
     .cloud {
-        width: 150px;
+      width: 100px;
     }
-
+  
     .cloud.top {
-        margin-left: 50px;
+      margin-left: 25px;
     }
-
+  
     .cloud.bottom {
-        margin-right: 50px;
+      margin-right: 25px;
     }
-
+  
     .my-image {
-        width: 150px;
-        height: 150px;
+      width: 100px;
+      height: 100px;
     }
-
+  
     .image-header {
-        font-size: 18pt;
+      font-size: 16pt;
     }
-
+  
     .image-text {
-        font-size: 12pt;
-        width: 75%;
+      font-size: 10pt;
+      width: 80%;
     }
-
+  
     hr {
-        width: 75%;
+      width: 80%;
+      margin: 50px auto;
     }
-
+  
     .skills-header {
-        font-size: 18pt;
+      font-size: 16pt;
     }
-
+  
     .coding {
-        width: 75%;
+      width: 80%;
     }
-
+  
     .coding-rat {
-        width: 100px;
+      width: 75px;
     }
-
+  
     .coding-header {
-        font-size: 12pt;
+      font-size: 10pt;
     }
-
+  
     .coding-text {
-        font-size: 10pt;
+      font-size: 8pt;
     }
-
+  
     .gamemastering {
-        width: 75%;
+      width: 80%;
     }
-
+  
     .gamemastering-cat {
-        width: 100px;
+      width: 75px;
     }
-
+  
     .gamemastering-header {
-        font-size: 12pt;
+      font-size: 10pt;
     }
-
+  
     .gamemastering-text {
-        font-size: 10pt;
+      font-size: 8pt;
     }
-
+  
     .getintouch-header {
-        font-size: 18pt;
+      font-size: 16pt;
     }
-
+  
     .getintouch-alt {
-        font-size: 10pt;
+      font-size: 10pt;
     }
-
+  
     .contact-me {
-        font-size: 10pt;
+      font-size: 10pt;
+      padding: 5px 10px;
     }
-
+  
     .bottom-container {
-        flex-direction: column;
+      flex-direction: column;
+      margin-top: 50px;
     }
-
+  
     .social-icon {
-        width: 20px;
+      width: 15px;
+      margin: 5px;
     }
-}
-
-@media (max-width: 600px) {
-    .title-text h1 {
-        font-size: 48pt;
-    }
-
-    .alt-text {
-        font-size: 24pt;
-    }
-
-    .cloud {
-        width: 200px;
-    }
-
-    .cloud.top {
-        margin-left: 100px;
-    }
-
-    .cloud.bottom {
-        margin-right: 100px;
-    }
-
-    .my-image {
-        width: 200px;
-        height: 200px;
-    }
-
-    .image-header {
-        font-size: 24pt;
-    }
-
-    .image-text {
-        font-size: 18pt;
-        width: 50%;
-    }
-
-    hr {
-        width: 50%;
-    }
-
-    .skills-header {
-        font-size: 24pt;
-    }
-
-    .coding {
-        width: 50%;
-    }
-
-    .coding-rat {
-        width: 150px;
-    }
-
-    .coding-header {
-        font-size: 18pt;
-    }
-
-    .coding-text {
-        font-size: 12pt;
-    }
-
-    .gamemastering {
-        width: 50%;
-    }
-
-    .gamemastering-cat {
-        width: 150px;
-    }
-
-    .gamemastering-header {
-        font-size: 18pt;
-    }
-
-    .gamemastering-text {
-        font-size: 12pt;
-    }
-
-    .getintouch-header {
-        font-size: 24pt;
-    }
-
-    .getintouch-alt {
-        font-size: 12pt;
-    }
-
-    .contact-me {
-        font-size: 12pt;
-    }
-
-    .bottom-container {
-        flex-direction: column;
-    }
-
-    .social-icon {
-        width: 30px;
-    }
-}
+  }  
 
 body {
     background-color: darksalmon;
