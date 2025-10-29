@@ -1,35 +1,77 @@
-# Mert Ergün - Personal Website
+# Mert Ergün - Portfolio Website
 
-This is the source code for my personal website.
-
-## Preview
-
-You can see a live preview of the website [here](https://mert-ergun.github.io/Personal-Website/).
-
-## Technologies Used
-
-- HTML
-- CSS
+A modern, interactive portfolio website showcasing my work as a Data Scientist and Computer Science Student.
 
 ## Features
 
-- Introduction section with a brief overview of myself
-- Skills section highlighting my programming and Game Mastering skills
-- Get In Touch section for contacting me
-- Social media links in the footer
+- **Modern Design**: Clean, professional interface with gradient accents and smooth animations
+- **Fully Responsive**: Optimized for desktop, tablet, and mobile devices
+- **Interactive Elements**: Smooth scrolling, hover effects, and dynamic animations
+- **Sections Include**:
+  - Hero section with animated typing effect
+  - About section with stats and information cards
+  - Skills showcase with categorized technologies
+  - Experience timeline with detailed work history
+  - Projects gallery with featured works
+  - Contact form with email integration
 
-## Getting Started
+## Technologies Used
 
-To run this website locally, follow these steps:
+- **HTML5**: Semantic markup
+- **CSS3**: Modern styling with CSS variables, Grid, and Flexbox
+- **JavaScript**: Vanilla JS for interactivity and animations
+- **Font Awesome**: Icons
+- **Google Fonts**: Inter and Poppins
 
-1. Clone the repository: `git clone https://github.com/mert-ergun/Personal-Website.git`
-2. Navigate to the project directory: `cd Personal-Website`
-3. Open the `index.html` file in a web browser.
+## Quick Start
+
+1. Clone the repository or download the files
+2. Open `index.html` in your web browser
+3. That's it! No build process or dependencies required
+
+## File Structure
+
+```
+portfolio/
+├── index.html      # Main HTML file
+├── styles.css      # All styles and animations
+├── script.js       # Interactive functionality
+└── README.md       # Project documentation
+```
+
+## Customization
+
+To customize the website for your own use:
+
+1. **Update Personal Information**: Edit the content in `index.html`
+2. **Change Colors**: Modify CSS variables in `styles.css` under `:root`
+3. **Add/Remove Sections**: Edit the HTML structure as needed
+4. **Modify Animations**: Adjust animation parameters in `styles.css` and `script.js`
+
+## Browser Support
+
+- All browsers that support HTML and JavaScript.
+
+## Performance
+
+- Optimized animations using CSS transforms
+- Intersection Observer for lazy loading
+- Debounced scroll events
+- Minimal dependencies
 
 ## Contact
 
-If you have any questions or would like to collaborate, feel free to reach out to me at [mertergun17@hotmail.com](mailto:mertergun17@hotmail.com).
+Feel free to reach out:
+
+- **Email**: mertergun.cs@gmail.com
+- **GitHub**: [@mert-ergun](https://github.com/mert-ergun)
+- **LinkedIn**: [mert-ergun](https://linkedin.com/in/mert-ergun)
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is open source and available for personal use.
+
+---
+
+Built with ❤️ using modern web technologies
+

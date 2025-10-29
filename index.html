@@ -3,391 +3,605 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mert Ergün | Interactive Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <title>Mert Ergün - Data Scientist & CS Student</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-
-    <header>
-        <nav>
-            <div class="container">
-                <a href="#" class="logo">Mert Ergün<span>.</span></a>
-                <ul class="nav-links">
-                    <li><a href="#about" class="nav-link"><span>//</span> about</a></li>
-                    <li><a href="#experience" class="nav-link"><span>//</span> experience</a></li>
-                    <li><a href="#projects" class="nav-link"><span>//</span> projects</a></li>
-                    <li><a href="#skills" class="nav-link"><span>//</span> skills</a></li>
-                    <li><a href="#contact" class="nav-link"><span>//</span> contact</a></li>
-                </ul>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">ME</div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
-        </nav>
-    </header>
+        </div>
+    </nav>
 
-    <main>
-        <section id="hero">
-            <div id="three-canvas"></div>
-            <div class="hero-content">
-                <h1 class="hero-title" data-text="Hi, I'm Mert Ergün">Hi, I'm Mert Ergün</h1>
-                <p class="hero-subtitle">Data Scientist & Computer Science Student</p>
-                <div class="hero-socials">
-                    <a href="https://github.com/mert-ergun" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                    <a href="https://linkedin.com/in/mert-ergun" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-particles"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="wave">👋</span>
+                    Hi, I'm <span class="gradient-text">Mert Ergün</span>
+                </h1>
+                <h2 class="hero-subtitle">Data Scientist & Computer Science Student</h2>
+                <p class="hero-description">
+                    Transforming data into insights and building intelligent systems
+                    with AI and machine learning
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
                 </div>
-                <a href="#about" class="scroll-down-btn" aria-label="Scroll down">
-                    <i class="fas fa-arrow-down"></i>
-                </a>
+                <div class="social-links">
+                    <a href="https://github.com/mert-ergun" target="_blank" class="social-icon">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/mert-ergun" target="_blank" class="social-icon">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:mertergun.cs@gmail.com" class="social-icon">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
             </div>
-        </section>
-
-        <section id="about" class="container">
-            <h2 class="section-title" data-text="ABOUT ME">ABOUT ME</h2>
-            <div class="about-content">
-                <div class="about-intro">
-                    <p>I am a highly motivated and proficient Computer Science student passionate about developing innovative solutions in AI and data analysis. With a strong foundation in multiple programming languages and cutting-edge technologies, I strive to push the boundaries of what's possible in the field of data science.</p>
+            <div class="hero-image">
+                <div class="floating-card card-1">
+                    <i class="fas fa-robot"></i>
+                    <span>AI & ML</span>
                 </div>
-                
-                <div class="about-grid">
-                    <div class="about-card education-card">
-                        <div class="card-header">
-                            <i class="fas fa-graduation-cap"></i>
-                            <h3>Education</h3>
-                        </div>
-                        <div class="card-content">
-                            <div class="university">
-                                <h4>Hacettepe University</h4>
-                                <p>Computer Science • 3rd Year</p>
-                            </div>
-                            <div class="gpa-section">
-                                <div class="gpa-display">
-                                    <span class="gpa-number">3.61</span>
-                                    <span class="gpa-scale">/4.0</span>
-                                </div>
-                                <div class="gpa-label">CGPA</div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="about-card expertise-card">
-                        <div class="card-header">
-                            <i class="fas fa-lightbulb"></i>
-                            <h3>Core Expertise</h3>
-                        </div>
-                        <div class="card-content">
-                            <div class="expertise-grid">
-                                <div class="expertise-item">
-                                    <i class="fas fa-database"></i>
-                                    <span>Data Extraction</span>
-                                </div>
-                                <div class="expertise-item">
-                                    <i class="fas fa-brain"></i>
-                                    <span>Machine Learning</span>
-                                </div>
-                                <div class="expertise-item">
-                                    <i class="fas fa-language"></i>
-                                    <span>Natural Language Processing</span>
-                                </div>
-                                <div class="expertise-item">
-                                    <i class="fas fa-project-diagram"></i>
-                                    <span>Data Structures & Algorithms</span>
-                                </div>
-                            </div>
-                        </div>
+                <div class="floating-card card-2">
+                    <i class="fas fa-chart-line"></i>
+                    <span>Data Science</span>
+                </div>
+                <div class="floating-card card-3">
+                    <i class="fas fa-code"></i>
+                    <span>Full Stack</span>
+                </div>
+                <div class="geometric-bg">
+                    <div class="geo-shape shape-1"></div>
+                    <div class="geo-shape shape-2"></div>
+                    <div class="geo-shape shape-3"></div>
+                    <div class="center-content">
+                        <span class="initials">ME</span>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+        <div class="scroll-indicator">
+            <a href="#about">
+                <div class="mouse"></div>
+            </a>
+        </div>
+    </section>
 
-        <section id="experience" class="container">
-            <h2 class="section-title" data-text="EXPERIENCE">EXPERIENCE</h2>
-            <div class="timeline">
-                 <div class="timeline-item">
-                    <div class="timeline-date">
-                        <span class="date-range">November 2024 - Present</span>
-                        <span class="company">Jotform</span>
-                    </div>
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <h3>Data Science Support Engineer</h3>
-                        <ul>
-                            <li>Developed Jotform AI Agents' One-On-One training system.</li>
-                            <li>Implemented RAG and Semantic Search on QDrant.</li>
-                            <li>Built a Ticket Similarity system with various embedding models.</li>
-                        </ul>
-                    </div>
-                </div>
-                 <div class="timeline-item">
-                    <div class="timeline-date">
-                        <span class="date-range">September 2024 - October 2024</span>
-                        <span class="company">TUSAŞ Engine Industries (TEI)</span>
-                    </div>
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <h3>Data Security Engineer Intern</h3>
-                        <ul>
-                            <li>Developed an AI-powered document classification tool.</li>
-                            <li>Fine-tuned local LLMs with a Streamlit interface.</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-date">
-                        <span class="date-range">June 2024 - August 2024</span>
-                        <span class="company">Jotform</span>
-                    </div>
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <h3>Data Science Intern</h3>
-                        <ul>
-                           <li>Developed a prompt injection detection service for Jotform AI.</li>
-                           <li>Achieved a 93% F1 score on real-world user prompts.</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-date">
-                        <span class="date-range">November 2023 - June 2024</span>
-                        <span class="company">ACM Hacettepe</span>
-                    </div>
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <h3>R&D Unit AI Projects Director</h3>
-                        <ul>
-                            <li>Leading and managing AI-based projects, focusing on developing innovative solutions in machine learning and data analysis.</li>
-                            <li>Collaborated with cross-functional teams to drive project success.</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-date">
-                        <span class="date-range">October 2023 - June 2024</span>
-                        <span class="company">Hacettepe University</span>
-                    </div>
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <h3>Student Assistant</h3>
-                        <ul>
-                            <li>Assisting in teaching BBM101-BBM103 Introduction to Programming with Python courses.</li>
-                            <li>Responsibilities include preparing teaching materials, conducting lab sessions, and helping students with course-related queries.</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-date">
-                        <span class="date-range">May 2023 - Present</span>
-                        <span class="company">TÜBİTAK STAR Internship - CROssBAR HU BIODATA LAB</span>
-                    </div>
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <h3>Research Intern</h3>
-                        <ul>
-                            <li>Contributed to research in bioinformatics under the STAR Internship program.</li>
-                            <li>Worked on data analysis, visualization, and algorithm optimization for biological data processing.</li>
-                            <li>Enhanced existing systems for better performance and accuracy.</li>
-                            <li>Contributed to open source projects.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="projects" class="container">
-            <h2 class="section-title" data-text="PROJECTS">PROJECTS</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-content">
-                        <h3>Tooningo</h3>
-                        <p>An "AI Assisted Online Comic Translation Tool" using Computer Vision, OCR, and AI-assisted translation. Served as Developer and Leader.</p>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-content">
-                        <h3>MiniTorch</h3>
-                        <p>A DIY teaching library for machine learning engineers, built as a pure Python re-implementation of the Torch API.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="skills" class="container">
-            <h2 class="section-title" data-text="SKILLS">SKILLS</h2>
-            <div class="skills-container">
-                <div class="skills-category">
-                    <h3 class="category-title">
-                        <i class="fas fa-code"></i>
-                        Programming Languages
-                    </h3>
-                    <div class="skills-grid">
-                        <div class="skill-card" data-skill="python">
-                            <div class="skill-icon">
-                                <i class="fab fa-python"></i>
-                            </div>
-                            <div class="skill-info">
-                                <h4>Python</h4>
-                            </div>
-                        </div>
-                        <div class="skill-card" data-skill="java">
-                            <div class="skill-icon">
-                                <i class="fab fa-java"></i>
-                            </div>
-                            <div class="skill-info">
-                                <h4>Java</h4>
-                            </div>
-                        </div>
-                        <div class="skill-card" data-skill="cpp">
-                            <div class="skill-icon">
-                                <i class="fas fa-code"></i>
-                            </div>
-                            <div class="skill-info">
-                                <h4>C++</h4>
-                            </div>
-                        </div>
-                        <div class="skill-card" data-skill="javascript">
-                            <div class="skill-icon">
-                                <i class="fab fa-js"></i>
-                            </div>
-                            <div class="skill-info">
-                                <h4>JavaScript</h4>
-                            </div>
-                        </div>
-                        <div class="skill-card" data-skill="csharp">
-                            <div class="skill-icon">
-                                <i class="fas fa-hashtag"></i>
-                            </div>
-                            <div class="skill-info">
-                                <h4>C#</h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skills-category">
-                    <h3 class="category-title">
-                        <i class="fas fa-brain"></i>
-                        AI & Machine Learning
-                    </h3>
-                    <div class="skills-grid">
-                        <div class="skill-card" data-skill="pytorch">
-                            <div class="skill-icon">
-                                <i class="fas fa-fire"></i>
-                            </div>
-                            <div class="skill-info">
-                                <h4>PyTorch</h4>
-                            </div>
-                        </div>
-                        <div class="skill-card" data-skill="langchain">
-                            <div class="skill-icon">
-                                <i class="fas fa-link"></i>
-                            </div>
-                            <div class="skill-info">
-                                <h4>LangChain</h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skills-category">
-                    <h3 class="category-title">
-                        <i class="fas fa-database"></i>
-                        Databases & APIs
-                    </h3>
-                    <div class="skills-grid">
-                        <div class="skill-card" data-skill="sql">
-                            <div class="skill-icon">
-                                <i class="fas fa-database"></i>
-                            </div>
-                            <div class="skill-info">
-                                <h4>SQL</h4>
-                            </div>
-                        </div>
-                        <div class="skill-card" data-skill="mongodb">
-                            <div class="skill-icon">
-                                <i class="fas fa-leaf"></i>
-                            </div>
-                            <div class="skill-info">
-                                <h4>MongoDB</h4>
-                            </div>
-                        </div>
-                        <div class="skill-card" data-skill="neo4j">
-                            <div class="skill-icon">
-                                <i class="fas fa-project-diagram"></i>
-                            </div>
-                            <div class="skill-info">
-                                <h4>Neo4j</h4>
-                            </div>
-                        </div>
-                        <div class="skill-card" data-skill="fastapi">
-                            <div class="skill-icon">
-                                <i class="fas fa-rocket"></i>
-                            </div>
-                            <div class="skill-info">
-                                <h4>FastAPI</h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skills-category">
-                    <h3 class="category-title">
-                        <i class="fas fa-tools"></i>
-                        Tools & Technologies
-                    </h3>
-                    <div class="skills-grid">
-                        <div class="skill-card" data-skill="docker">
-                            <div class="skill-icon">
-                                <i class="fab fa-docker"></i>
-                            </div>
-                            <div class="skill-info">
-                                <h4>Docker</h4>
-                            </div>
-                        </div>
-                        <div class="skill-card" data-skill="linux">
-                            <div class="skill-icon">
-                                <i class="fab fa-linux"></i>
-                            </div>
-                            <div class="skill-info">
-                                <h4>Linux</h4>
-                            </div>
-                        </div>
-                        <div class="skill-card" data-skill="unity">
-                            <div class="skill-icon">
-                                <i class="fab fa-unity"></i>
-                            </div>
-                            <div class="skill-info">
-                                <h4>Unity</h4>
-                            </div>
-                        </div>
-                        <div class="skill-card" data-skill="web">
-                            <div class="skill-icon">
-                                <i class="fas fa-code"></i>
-                            </div>
-                            <div class="skill-info">
-                                <h4>HTML/CSS</h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact" class="container">
-            <h2 class="section-title" data-text="CONTACT">CONTACT</h2>
-            <p class="contact-text">My inbox is always open, whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
-            <a href="mailto:mertergun.cs@gmail.com" class="btn">Say Hello</a>
-        </section>
-    </main>
-
-    <footer>
+    <!-- About Section -->
+    <section id="about" class="about">
         <div class="container">
-            <p>Designed & Built by Mert Ergün</p>
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="lead">
+                        A fourth-year Computer Science student at <strong>Hacettepe University</strong>, 
+                        adept in data extraction, machine learning, data structures and algorithms, 
+                        AI-powered security tools, and natural language processing.
+                    </p>
+                    <p>
+                        I'm passionate about leveraging artificial intelligence and data science to solve 
+                        real-world problems. My experience spans from developing AI agents and RAG systems 
+                        to building secure document classification tools and prompt injection detection services.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <div class="stat-number">3.61</div>
+                            <div class="stat-label">GPA</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">7+</div>
+                            <div class="stat-label">Languages</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">10+</div>
+                            <div class="stat-label">Projects</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-info">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Education</h3>
+                            <p><strong>Hacettepe University</strong></p>
+                            <p>B.S. Computer Science</p>
+                            <p class="info-date">Oct 2022 - Present</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Current Role</h3>
+                            <p><strong>Jotform</strong></p>
+                            <p>Data Science Support Engineer</p>
+                            <p class="info-date">Nov 2024 - Present</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Location</h3>
+                            <p>Ankara, Turkey</p>
+                            <p>+90 546 486 7608</p>
+                            <p>mertergun.cs@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Technologies</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-code"></i>
+                        <h3>Languages</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">C++</span>
+                        <span class="skill-tag">C</span>
+                        <span class="skill-tag">C#</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-database"></i>
+                        <h3>Databases</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">Neo4j</span>
+                        <span class="skill-tag">Cypher</span>
+                        <span class="skill-tag">QDrant</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-globe"></i>
+                        <h3>Web Development</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">HTML</span>
+                        <span class="skill-tag">CSS</span>
+                        <span class="skill-tag">FastAPI</span>
+                        <span class="skill-tag">Streamlit</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-tools"></i>
+                        <h3>Technologies</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Linux</span>
+                        <span class="skill-tag">LangChain</span>
+                        <span class="skill-tag">PyTorch</span>
+                        <span class="skill-tag">Unity</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-brain"></i>
+                        <h3>AI & ML</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Machine Learning</span>
+                        <span class="skill-tag">Deep Learning</span>
+                        <span class="skill-tag">NLP</span>
+                        <span class="skill-tag">LLMs</span>
+                        <span class="skill-tag">RAG</span>
+                        <span class="skill-tag">GraphRAG</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-chart-bar"></i>
+                        <h3>Data Science</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Data Analysis</span>
+                        <span class="skill-tag">Visualization</span>
+                        <span class="skill-tag">Clustering</span>
+                        <span class="skill-tag">Embeddings</span>
+                        <span class="skill-tag">Semantic Search</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Data Science Support Engineer</h3>
+                            <span class="timeline-company">Jotform</span>
+                            <span class="timeline-date">Nov 2024 - Present</span>
+                        </div>
+                        <ul class="timeline-list">
+                            <li>Developed Jotform AI Agents' One-On-One training system using PHP</li>
+                            <li>Implemented RAG techniques and Semantic Search on QDrant Database</li>
+                            <li>Developed Ticket Similarity system using QDrant databases and various embedding models</li>
+                            <li>Created Text Embedding Quality Benchmark to test various embedding models' performance</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>PHP</span>
+                            <span>RAG</span>
+                            <span>QDrant</span>
+                            <span>Embeddings</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Data Security Engineer Intern</h3>
+                            <span class="timeline-company">TUSAŞ Engine Industries (TEI)</span>
+                            <span class="timeline-date">Sep 2024 - Oct 2024</span>
+                        </div>
+                        <ul class="timeline-list">
+                            <li>Developed AI-powered document classification tool for internal communication confidentiality</li>
+                            <li>Implemented fine-tuned local large language models with Streamlit interface</li>
+                            <li>Designed user authentication, manager approval system, and bulk file analysis features</li>
+                            <li>Managed MongoDB database integration, authentication system, and FastAPI service</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>LLMs</span>
+                            <span>FastAPI</span>
+                            <span>MongoDB</span>
+                            <span>Security</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Data Science Intern</h3>
+                            <span class="timeline-company">Jotform</span>
+                            <span class="timeline-date">Jun 2024 - Aug 2024</span>
+                        </div>
+                        <ul class="timeline-list">
+                            <li>Developed prompt injection detection service for Jotform Form Builder AI</li>
+                            <li>Implemented and evaluated classical and deep learning models for prompt classification</li>
+                            <li>Explored local large language models (LLMs) for enhanced detection in complex contexts</li>
+                            <li>Achieved 93% F1 score on distributed real world user prompts dataset</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>ML</span>
+                            <span>DL</span>
+                            <span>Security</span>
+                            <span>NLP</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>R&D Unit AI Projects Director</h3>
+                            <span class="timeline-company">ACM Hacettepe</span>
+                            <span class="timeline-date">Nov 2023 - Jun 2024</span>
+                        </div>
+                        <ul class="timeline-list">
+                            <li>Led and managed AI-based projects, focusing on innovative solutions in machine learning</li>
+                            <li>Collaborated with cross-functional teams to drive project success</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>Leadership</span>
+                            <span>AI</span>
+                            <span>Project Management</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Student Assistant</h3>
+                            <span class="timeline-company">Hacettepe University</span>
+                            <span class="timeline-date">Oct 2023 - Jun 2024</span>
+                        </div>
+                        <ul class="timeline-list">
+                            <li>Assisted in teaching Introduction to Programming with Python courses (BBM101-BBM103)</li>
+                            <li>Prepared teaching materials, conducted lab sessions, and helped students</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>Teaching</span>
+                            <span>Python</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>TÜBİTAK STAR Internship</h3>
+                            <span class="timeline-company">CROssBAR - HU BIODATA LAB</span>
+                            <span class="timeline-date">May 2023 - Present</span>
+                        </div>
+                        <ul class="timeline-list">
+                            <li>Contributed to bioinformatics research under the STAR Internship program</li>
+                            <li>Worked on data analysis, visualization, and algorithm optimization for biological data</li>
+                            <li>Enhanced existing systems for better performance and accuracy</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>Bioinformatics</span>
+                            <span>Research</span>
+                            <span>Data Analysis</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card featured">
+                    <div class="project-badge">Research</div>
+                    <div class="project-header">
+                        <i class="fas fa-flask"></i>
+                        <h3>CROssBAR v2</h3>
+                    </div>
+                    <p class="project-role">Developer - Researcher</p>
+                    <p class="project-description">
+                        A comprehensive bioinformatics knowledge graph integrating distributed databases 
+                        with LLM-supported natural language query infrastructure and advanced visualizations. 
+                        Supervised by Prof. Dr. Tunca Doğan at HUBioDataSciLab.
+                    </p>
+                    <div class="project-tags">
+                        <span>Knowledge Graph</span>
+                        <span>LLM</span>
+                        <span>NLP</span>
+                        <span>Bioinformatics</span>
+                    </div>
+                </div>
+
+                <div class="project-card featured">
+                    <div class="project-badge">Finalist</div>
+                    <div class="project-header">
+                        <i class="fas fa-trophy"></i>
+                        <h3>Super Therapy</h3>
+                    </div>
+                    <p class="project-role">Main Developer - Teknofest</p>
+                    <p class="project-description">
+                        Online therapy platform with AI-powered supervision and ethical violation detection. 
+                        Selected as Top 25 team from 627 participants in Teknofest's Technological 
+                        Applications in Psychology competition.
+                    </p>
+                    <div class="project-tags">
+                        <span>AI Supervision</span>
+                        <span>Ethics Detection</span>
+                        <span>Healthcare</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <i class="fas fa-brain"></i>
+                        <h3>ChatPSY</h3>
+                    </div>
+                    <p class="project-role">Main Developer</p>
+                    <p class="project-description">
+                        Comprehensive AI model providing supervision for psychologists, trained using 
+                        GraphRAG on specialized knowledge graph from thousands of pages of detailed 
+                        psychological documents.
+                    </p>
+                    <div class="project-tags">
+                        <span>GraphRAG</span>
+                        <span>Knowledge Graph</span>
+                        <span>Psychology</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <i class="fas fa-project-diagram"></i>
+                        <h3>Medical HyperGraphRAG</h3>
+                    </div>
+                    <p class="project-role">Developer - Internship Project</p>
+                    <p class="project-description">
+                        Converts medical articles into knowledge hypergraphs with n-ary relationships, 
+                        using Prolog-like rules for explainable and repeatable clinical diagnosis assistance.
+                    </p>
+                    <div class="project-tags">
+                        <span>HyperGraph</span>
+                        <span>Rule-Based</span>
+                        <span>Medical AI</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <i class="fas fa-eye"></i>
+                        <h3>VigilEye</h3>
+                    </div>
+                    <p class="project-role">Co-Developer</p>
+                    <p class="project-description">
+                        OSINT application using Reddit API for comprehensive analysis including threat 
+                        detection, sentiment analysis, clustering, and extremist content detection using 
+                        ML, agentic AI, and LLMs.
+                    </p>
+                    <div class="project-tags">
+                        <span>OSINT</span>
+                        <span>Threat Analysis</span>
+                        <span>Agentic AI</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <i class="fas fa-fire"></i>
+                        <h3>MiniTorch</h3>
+                    </div>
+                    <p class="project-role">Developer - Learning Project</p>
+                    <p class="project-description">
+                        Pure Python re-implementation of PyTorch API, designed as a teaching library 
+                        for understanding deep learning internals. Simple, tested, and capable of 
+                        running Torch code.
+                    </p>
+                    <div class="project-tags">
+                        <span>Deep Learning</span>
+                        <span>PyTorch</span>
+                        <span>Educational</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <i class="fas fa-book"></i>
+                        <h3>Tooningo</h3>
+                    </div>
+                    <p class="project-role">Developer - Leader</p>
+                    <p class="project-description">
+                        AI-Assisted online comic translation tool combining Computer Vision, OCR, 
+                        AI translation services, and image processing technologies.
+                    </p>
+                    <div class="project-tags">
+                        <span>Computer Vision</span>
+                        <span>OCR</span>
+                        <span>Translation</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Let's Connect</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    <p>
+                        I'm always open to discussing new projects, creative ideas, 
+                        or opportunities to be part of your vision.
+                    </p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <strong>Email</strong>
+                                <a href="mailto:mertergun.cs@gmail.com">mertergun.cs@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <strong>Phone</strong>
+                                <a href="tel:+905464867608">+90 546 486 7608</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <strong>Location</strong>
+                                <span>Ankara, Turkey</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-social">
+                        <a href="https://github.com/mert-ergun" target="_blank" class="social-btn">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="https://linkedin.com/in/mert-ergun" target="_blank" class="social-btn">
+                            <i class="fab fa-linkedin"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required>
+                            <label for="name">Your Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email">Your Email</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" required>
+                            <label for="subject">Subject</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <label for="message">Message</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Mert Ergün. Built with passion and modern web technologies.</p>
         </div>
     </footer>
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
-    <script src="script.js"></script>
 
+    <script src="script.js"></script>
 </body>
 </html>
+
